@@ -2,6 +2,7 @@ const {connect} = require("./client"); // import connect function from client.js
 const {setupInput} = require("./input"); // import setupInput from input.js file
 console.log("Connecting ...");
 
-connect(); // call connect to establish a network.
-setupInput(); //call setupInput to establish a network.
+
+// connect(); // call connect to establish a network.
+setupInput(connect()); //call setupInput to establish a network.
 
